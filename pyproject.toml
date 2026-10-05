@@ -1,0 +1,15 @@
+[project]
+name = "hello-python"
+version = "0.1.0"
+description = "Demo Python CLI with PyInstaller and CI/CD"
+requires-python = ">=3.10"
+
+[project.scripts]
+hello = "main:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
